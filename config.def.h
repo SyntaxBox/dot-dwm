@@ -10,7 +10,7 @@ static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=14";
 static const char col_gray1[]       = "#00141D";
 static const char col_gray2[]       = "#644475";
 static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#00141D";
+static const char col_gray4[]       = "#001a26";
 static const char col_gray5[]       = "#b0e2ac";
 static const char col_cyan[]        = "#4fc2f8";
 
