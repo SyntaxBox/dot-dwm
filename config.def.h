@@ -7,12 +7,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=14" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=14";
-static const char col_gray1[]       = "#282a36";
+static const char col_gray1[]       = "#00141D";
 static const char col_gray2[]       = "#644475";
 static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#282a36";
+static const char col_gray4[]       = "#00141D";
 static const char col_gray5[]       = "#b0e2ac";
-static const char col_cyan[]        = "#f38ba8";
+static const char col_cyan[]        = "#4fc2f8";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -62,11 +62,13 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
+static const char *scrotcmd[]  = { "scrot", "/home/hamid/images/screenshots/%Y-%m-%d_%H-%M-%S.png", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+ 	{ MODKEY,             		XK_s, 	   spawn,          {.v = scrotcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
