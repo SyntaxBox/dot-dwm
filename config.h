@@ -68,7 +68,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
- 	{ MODKEY,             		XK_s, 	   spawn,          {.v = scrotcmd } },
+ 	{ MODKEY,             		      XK_s, 	   spawn,          {.v = scrotcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -99,17 +99,18 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,       quit,           {0} },
-	{ MODKEY,			XK_F6, 	    spawn,	SHCMD("amixer set Master 1%-") },
+	{ MODKEY|ShiftMask,             XK_q,       quit,          {0} },
+	{ MODKEY,			                  XK_F6, 	    spawn,	    SHCMD("amixer set Master 1%-") },
 	{ MODKEY,                       XK_F7,      spawn,      SHCMD("amixer set Master 1%+") },
 	{ MODKEY,                       XK_F3,      spawn,      SHCMD("brightnessctl set 1%-") },
 	{ MODKEY,                       XK_F4,      spawn,      SHCMD("brightnessctl set +1%") }, 
-  	{ MODKEY,                       XK_F1,      spawn,      SHCMD("setxkbmap -layout ar")  },
-  	{ MODKEY,                       XK_F2,      spawn,      SHCMD("setxkbmap -layout us")  },
-  	{ MODKEY,		        XK_o,       spawn,      SHCMD("code")                  },
-  	{ MODKEY,		        XK_u,       spawn,      SHCMD("thorium-browser")       },
-  	{ MODKEY|ShiftMask,             XK_j,       spawn,      SHCMD("firefox")               },
-  	{ MODKEY|ShiftMask,             XK_h,       spawn,      SHCMD("thunar")                },
+  { MODKEY,                       XK_F1,      spawn,      SHCMD("setxkbmap -layout ar")  },
+	{ MODKEY,                       XK_F2,      spawn,      SHCMD("setxkbmap -layout us")  },
+	{ MODKEY|ShiftMask,             XK_x,       spawn,      SHCMD("/home/hamid/dev/scripts/local/salamtak.sh")  },
+ 	{ MODKEY,		                    XK_o,       spawn,      SHCMD("code")                  },
+ 	{ MODKEY,		                    XK_u,       spawn,      SHCMD("thorium-browser")       },
+ 	{ MODKEY|ShiftMask,             XK_j,       spawn,      SHCMD("firefox")               },
+ 	{ MODKEY|ShiftMask,             XK_h,       spawn,      SHCMD("thunar")                },
 };
 
 /* button definitions */
