@@ -111,6 +111,8 @@ static const Key keys[] = {
  	{ MODKEY,		                    XK_u,       spawn,      SHCMD("thorium-browser")       },
  	{ MODKEY|ShiftMask,             XK_j,       spawn,      SHCMD("firefox")               },
  	{ MODKEY|ShiftMask,             XK_h,       spawn,      SHCMD("thunar")                },
+{ MODKEY,                         XK_d,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 100'") },
+{ MODKEY,                         XK_g,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 120'") },
 };
 
 /* button definitions */
