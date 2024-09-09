@@ -112,7 +112,8 @@ static const Key keys[] = {
  	{ MODKEY|ShiftMask,             XK_j,       spawn,      SHCMD("firefox")               },
  	{ MODKEY|ShiftMask,             XK_h,       spawn,      SHCMD("thunar")                },
 { MODKEY,                         XK_d,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 100'") },
-{ MODKEY,                         XK_g,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 120'") },
+{ MODKEY,                         XK_n,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 120'") },
+{ MODKEY,                         XK_v,                  spawn,      SHCMD("xrandr --output HDMI-1 --auto --primary --rate 74.97 --output eDP-1 --auto --left-of HDMI-1") },
 };
 
 /* button definitions */
