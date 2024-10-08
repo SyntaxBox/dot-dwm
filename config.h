@@ -106,6 +106,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F4,      spawn,      SHCMD("brightnessctl set +1%") }, 
   { MODKEY,                       XK_F1,      spawn,      SHCMD("setxkbmap -layout ar")  },
 	{ MODKEY,                       XK_F2,      spawn,      SHCMD("setxkbmap -layout us")  },
+	{ MODKEY,                       XK_F9,      spawn,      SHCMD("setxkbmap -layout ru")  },
 	{ MODKEY|ShiftMask,             XK_x,       spawn,      SHCMD("/home/hamid/dev/scripts/local/salamtak.sh")  },
  	{ MODKEY,		                    XK_o,       spawn,      SHCMD("code")                  },
  	{ MODKEY,		                    XK_u,       spawn,      SHCMD("thorium-browser")       },
