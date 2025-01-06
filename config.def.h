@@ -104,18 +104,18 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F7,      spawn,      SHCMD("amixer set Master 1%+") },
 	{ MODKEY,                       XK_F3,      spawn,      SHCMD("brightnessctl set 1%-") },
 	{ MODKEY,                       XK_F4,      spawn,      SHCMD("brightnessctl set +1%") }, 
-  { MODKEY,                       XK_F1,      spawn,      SHCMD("setxkbmap -layout ar")  },
+  { MODKEY,                       XK_F1,      spawn,      SHCMD("setxkbmap -layout ara")  },
 	{ MODKEY,                       XK_F2,      spawn,      SHCMD("setxkbmap -layout us")  },
 	{ MODKEY,                       XK_F9,      spawn,      SHCMD("setxkbmap -layout ru")  },
 	{ MODKEY|ShiftMask,             XK_x,       spawn,      SHCMD("/home/hamid/dev/scripts/local/salamtak.sh")  },
  	{ MODKEY,		                    XK_o,       spawn,      SHCMD("code")                  },
- 	{ MODKEY,		                    XK_u,       spawn,      SHCMD("thorium-browser")       },
+ 	{ MODKEY,		                    XK_u,       spawn,      SHCMD("zen-browser")           },
  	{ MODKEY|ShiftMask,             XK_j,       spawn,      SHCMD("firefox")               },
  	{ MODKEY|ShiftMask,             XK_h,       spawn,      SHCMD("thunar")                },
  	{ MODKEY|ShiftMask,             XK_v,       spawn,      SHCMD("systemctl suspend")     },
-{ MODKEY,                         XK_d,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 100'") },
-{ MODKEY,                         XK_n,                  spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 120'") },
-{ MODKEY,                         XK_v,                  spawn,      SHCMD("xrandr --output HDMI-1 --auto --primary --rate 74.97 --output eDP-1 --auto --left-of HDMI-1") },
+  { MODKEY,                       XK_d,       spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 100'") },
+  { MODKEY,                       XK_n,       spawn,      SHCMD("xrdb -merge <<< 'Xft.dpi: 120'") },
+  { MODKEY,                       XK_v,       spawn,      SHCMD("xrandr --output HDMI-1 --auto --primary --rate 74.97 --output eDP-1 --auto --left-of HDMI-1") },
 };
 
 /* button definitions */
