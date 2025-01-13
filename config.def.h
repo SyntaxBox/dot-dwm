@@ -5,7 +5,7 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=14", "Noto Color Emoji:size=16" };
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=14","Tajawal:size=14", "Noto Color Emoji:size=16" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=14";
 static const char col_gray1[]       = "#00141D";
 static const char col_gray2[]       = "#644475";
@@ -62,7 +62,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
-static const char *scrotcmd[]  = { "scrot", "/home/hamid/images/screenshots/%Y-%m-%d_%H-%M-%S.png", NULL };
+static const char *scrotcmd[]  = { "flameshot","gui", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -107,7 +107,7 @@ static const Key keys[] = {
   { MODKEY,                       XK_F1,      spawn,      SHCMD("setxkbmap -layout ara")  },
 	{ MODKEY,                       XK_F2,      spawn,      SHCMD("setxkbmap -layout us")  },
 	{ MODKEY,                       XK_F9,      spawn,      SHCMD("setxkbmap -layout ru")  },
-	{ MODKEY|ShiftMask,             XK_x,       spawn,      SHCMD("/home/hamid/dev/scripts/salamtak_scripts/salamtak.sh")  },
+	{ MODKEY|ShiftMask,             XK_x,       spawn,      SHCMD("/home/hamidos/dev/scripts/salamtak_scripts/salamtak.sh")  },
  	{ MODKEY,		                    XK_o,       spawn,      SHCMD("code")                  },
  	{ MODKEY,		                    XK_u,       spawn,      SHCMD("zen-browser")           },
  	{ MODKEY|ShiftMask,             XK_j,       spawn,      SHCMD("firefox")               },
